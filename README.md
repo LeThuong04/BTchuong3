@@ -1,4 +1,4 @@
-# #💾Backup Script
+#💾Backup Script
 
 Tự động sao lưu các file cơ sở dữ liệu và gửi email thông báo
 
@@ -7,7 +7,7 @@ Tự động sao lưu các file cơ sở dữ liệu và gửi email thông báo
 - Gửi email thông báo kết quả sao lưu
 - Chạy tự động hàng ngày lúc 0h00
 
-##  Cấu trúc thư mục
+## 📂 Cấu trúc thư mục
 
 project_folder/
    database_folder/    # Chứa file cần backup (.sql, .sqlite3)
@@ -27,7 +27,7 @@ project_folder/
 
 
 
-##Cài đặt
+## 📦Cài đặt
 
 Cài Python nếu chưa có: python.org.
 Cài đặt các thư viện:pip install -r requirements.txt
@@ -42,7 +42,7 @@ EMAIL_PASSWORD là App Password của Gmail (tạo tại Google Account > Securi
 
 
 
-##Sử dụng
+## 🚀Sử dụng
 
 Đặt các file .sql hoặc .sqlite3 vào thư mục database_folder.
 Chạy script:python backup.py
@@ -50,11 +50,10 @@ Chạy script:python backup.py
 
 Script sẽ chạy backup lúc 0h mỗi ngày và gửi email thông báo.
 
-##Kiểm tra ngay
-Để chạy backup ngay lập tức, bỏ comment dòng # backup_va_thongbao() trong backup.py. Hoặc thay đổi lịch thành mỗi 10 giây:
-schedule.every(10).seconds.do(backup_va_thongbao)
+## 🧪Kiểm tra ngay
+Để chạy backup ngay lập tức, bỏ comment dòng # backup_va_thongbao() trong backup.py
 
-##Lưu ý
+## ⚠️Lưu ý
 
 Đảm bảo file .env có thông tin đúng.
 Kiểm tra kết nối mạng để gửi email.
