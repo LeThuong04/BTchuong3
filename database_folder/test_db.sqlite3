@@ -1,0 +1,25 @@
+sqlite3 test_db.sqlite3
+
+-- Trong SQLite shell:
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    email TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO users (username, email) VALUES
+('alex_wong', 'alex@example.com'),
+('sara_conor', 'sara@example.com');
+
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    product_name TEXT NOT NULL,
+    price REAL NOT NULL
+);
+
+INSERT INTO products (product_name, price) VALUES
+('Tablet', 299.99),
+('Smartwatch', 199.99);
+
+.quit
